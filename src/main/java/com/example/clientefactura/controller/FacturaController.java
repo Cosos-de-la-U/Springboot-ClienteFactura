@@ -22,7 +22,7 @@ public class FacturaController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Factura> getFactura(@RequestParam Long id){
+    public Optional<Factura> getFactura(@PathVariable Long id){
         return facturaService.getFactura(id);
     }
 

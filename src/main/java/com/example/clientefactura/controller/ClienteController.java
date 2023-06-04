@@ -22,7 +22,7 @@ public class ClienteController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Cliente> getCliente(@RequestParam Long id){
+    public Optional<Cliente> getCliente(@PathVariable Long id){
         return clienteService.getCliente(id);
     }
 
