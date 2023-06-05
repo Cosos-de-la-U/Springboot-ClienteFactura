@@ -15,7 +15,7 @@
 **POST (Actualizar)**: http://localhost:8080/cliente
 ```json
 {   
-    "cliente_id": 1, / Solo se pasa el ID, con un post request
+    "cliente_id": 1, // Solo se pasa el ID, con un post request
     "nombre": "John Doe"
 }
 ```
