@@ -30,17 +30,21 @@
 **POST**: http://localhost:8080/factura
 ```json
 {
-  "cliente_id": 1,
-  "fechaEmision": "2023-06-01",
-  "total": 100.50
+  "cliente": {
+    "clienteId": 1
+  },
+  "fechaEmision": "2023-06-04",
+  "total": 100.00
 }
 ```
 **POST (Actualizar)**: http://localhost:8080/factura
 ```json
 {
-  "cliente_id": 1, // Solo se pasa el ID, con un post request
-  "fechaEmision": "2023-06-01",
-  "total": 100.50
+  "cliente": {
+    "clienteId": 1
+  },
+  "fechaEmision": "2023-06-04",
+  "total": 100.00
 }
 ```
 **DELETE (ID)**: http://localhost:8080/factura/1
